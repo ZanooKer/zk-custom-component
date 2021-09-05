@@ -43,7 +43,9 @@
     ]
   },
   "husky": {
-    "pre-push": "yarn test"
+    "hooks": {
+      "pre-commit": "CI=true yarn test"
+    }
   },
   "devDependencies": {
     "@storybook/addon-storyshots": "^6.3.8",
